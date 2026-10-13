@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projeto gratuito de inclusão digital para jovens.">
+    <title>Conecta Jovem | Inclusão Digital</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="topo">
+    <a class="logo" href="#">Conecta<span>Jovem.</span></a>
+    <a class="link-inscricao" href="#cadastro">Inscreva-se</a>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="hero-texto">
+            <span class="etiqueta">TECNOLOGIA PARA TODOS</span>
+            <h1>Seu futuro também pode ser <span>digital.</span></h1>
+            <p>
+                Aprenda informática, navegação segura e lógica de programação
+                gratuitamente. A tecnologia deve ser uma oportunidade para todos!
+            </p>
+            <a href="#cadastro" class="botao">Quero participar ↗</a>
+            <p class="detalhe">Projeto gratuito • Jovens de 14 a 18 anos</p>
+        </div>
+
+        <div class="hero-card">
+            <div class="icone">💻</div>
+            <h2>Aprender. Criar. Conectar.</h2>
+            <p>Conhecimento digital para abrir novas portas.</p>
+            <div class="tags">
+                <span>Informática</span>
+                <span>Programação</span>
+                <span>Oportunidades</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="sobre">
+        <h2>Oportunidades que conectam você ao futuro</h2>
+        <p class="subtitulo">
+            Oficinas práticas para desenvolver habilidades úteis na escola,
+            no dia a dia e no mercado de trabalho.
+        </p>
+
+        <div class="cards">
+            <article class="card">
+                <span>🖥️</span>
+                <h3>Informática básica</h3>
+                <p>Aprenda a utilizar computadores e ferramentas de produtividade.</p>
+            </article>
+
+            <article class="card">
+                <span>🔐</span>
+                <h3>Internet segura</h3>
+                <p>Navegue com segurança e aprenda a proteger seus dados.</p>
+            </article>
+
+            <article class="card">
+                <span>💡</span>
+                <h3>Programação</h3>
+                <p>Conheça a lógica de programação e desenvolva seus primeiros projetos.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="cadastro" class="cadastro">
+        <div class="cabecalho-form">
+            <span class="etiqueta">FAÇA PARTE</span>
+            <h2>Inscreva-se no projeto</h2>
+            <p>Preencha os dados abaixo para demonstrar seu interesse.</p>
+        </div>
+
+        <div class="vagas">
+            <span>🎯 Público-alvo: jovens de 14 a 18 anos</span>
+            <span>📚 8 oficinas presenciais</span>
+            <span>💚 Participação gratuita</span>
+        </div>
+
+        <form id="formCadastro">
+            <div class="grade-form">
+                <div class="campo">
+                    <label for="nome">Nome completo *</label>
+                    <input id="nome" name="nome" type="text"
+                           maxlength="100" autocomplete="name" required>
+                </div>
+
+                <div class="campo">
+                    <label for="nascimento">Data de nascimento *</label>
+                    <input id="nascimento" name="nascimento" type="date"
+                           required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">E-mail *</label>
+                    <input id="email" name="email" type="email"
+                           maxlength="150" autocomplete="email" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefone">Telefone de contato *</label>
+                    <input id="telefone" name="telefone" type="tel"
+                           maxlength="20" autocomplete="tel"
+                           placeholder="(21) 99999-9999" required>
+                </div>
+
+                <div class="campo">
+                    <label for="genero">Gênero (opcional)</label>
+                    <select id="genero" name="genero">
+                        <option value="">Prefiro não informar</option>
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                        <option>Não binário</option>
+                        <option>Outro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="escolaridade">Escolaridade *</label>
+                    <select id="escolaridade" name="escolaridade" required>
+                        <option value="">Selecione</option>
+                        <option>8º ano do Ensino Fundamental</option>
+                        <option>9º ano do Ensino Fundamental</option>
+                        <option>1º ano do Ensino Médio</option>
+                        <option>2º ano do Ensino Médio</option>
+                        <option>3º ano do Ensino Médio</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="escola">Escola onde estuda *</label>
+                    <input id="escola" name="escola" type="text"
+                           maxlength="150" required>
+                </div>
+
+                <div class="campo">
+                    <label for="computador">Tem computador em casa? *</label>
+                    <select id="computador" name="computador" required>
+                        <option value="">Selecione</option>
+                        <option>Sim</option>
+                        <option>Não</option>
+                        <option>Acesso ocasional</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="internet">Acesso à internet *</label>
+                    <select id="internet" name="internet" required>
+                        <option value="">Selecione</option>
+                        <option>Internet de boa qualidade</option>
+                        <option>Internet limitada no celular</option>
+                        <option>Wi-Fi compartilhado</option>
+                        <option>Não tenho acesso regular</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="responsavel">Nome do responsável legal *</label>
+                    <input id="responsavel" name="responsavel" type="text"
+                           maxlength="100" required>
+                </div>
+
+                <div class="campo campo-completo">
+                    <label for="interesse">O que você deseja aprender? *</label>
+                    <textarea id="interesse" name="interesse" rows="4"
+                              maxlength="500" required></textarea>
+                </div>
+            </div>
+
+            <label class="termo">
+                <input type="checkbox" id="consentimento" required>
+                <span>Confirmo que li o aviso de privacidade e estou ciente
+                de que meus dados serão utilizados para gerenciar o interesse
+                na participação do projeto. *</span>
+            </label>
+
+            <button type="submit" class="botao botao-enviar">
+                Enviar inscrição
+            </button>
+
+            <p id="mensagem" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+
+    <section class="equipe">
+        <h2>Uma comunidade com mais oportunidades</h2>
+        <p>
+            Nosso objetivo é aproximar os jovens da tecnologia por meio
+            de computadores reutilizados, ferramentas gratuitas e oficinas
+            que incentivam o aprendizado e a autonomia digital.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <a class="logo" href="#">Conecta<span>Jovem.</span></a>
+    <p>Inclusão digital, conhecimento e novas oportunidades.</p>
+    <p>Projeto comunitário de inclusão digital.</p>
+</footer>
+
+</body>
+</html>
